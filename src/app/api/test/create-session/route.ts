@@ -12,10 +12,9 @@ export async function POST(req: Request) {
   const totalQuestions = 30;
 
   try {
-    await db
-      .insert(testSessions)
-      .values({ id: sessionId, utms: utms as any, consent, startedAt: now as any, seed, totalQuestions })
-      .onConflictDoNothing();
+    const values: any = { id: sessionId, consent, startedAt: now as any, seed, totalQuestions };
+    if (utms && typeof utms === "object") values.utms = utms;
+    await db.insert(testSessions).values(values).onConflictDoNothing();
 
     return NextResponse.json({ ok: true, sessionId });
   } catch (e: any) {
