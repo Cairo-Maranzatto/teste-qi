@@ -1,4 +1,5 @@
 import RankingTop5 from "@/components/RankingTop5";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -32,12 +33,12 @@ export default function Page() {
             </div>
           </div>
           <div className="space-y-2">
-            <a
+            <Link
               href="/test/start"
               className="inline-flex w-full items-center justify-center rounded-md bg-black px-4 py-3 text-white hover:opacity-90 md:max-w-sm"
             >
               Iniciar teste agora
-            </a>
+            </Link>
             <div className="text-center text-xs text-muted-foreground md:text-left">
               Conteúdo de entretenimento. Indicado para maiores de 16 anos.
             </div>
