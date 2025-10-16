@@ -1,6 +1,7 @@
 "use client";
 
 import { toast } from "sonner";
+import { useRouter } from "next/navigation";
 
 type Props = {
   sessionId: string;
@@ -10,6 +11,7 @@ type Props = {
 };
 
 export default function ShareResultButton({ sessionId, iq, percentile, bandText }: Props) {
+  const router = useRouter();
   const handleShare = async () => {
     try {
       const origin = typeof window !== "undefined" ? window.location.origin : "";
@@ -25,9 +27,13 @@ export default function ShareResultButton({ sessionId, iq, percentile, bandText 
 
       if (navigator.share) {
         await navigator.share({ title, text, url });
+        // Compartilhamento bem-sucedido: ir para o dashboard
+        router.push(`/test/${sessionId}/dashboard`);
       } else {
         await navigator.clipboard.writeText(`${title}\n${text}\n${url}`);
         toast.success("Link copiado para a área de transferência");
+        // Após copiar com sucesso: ir para o dashboard
+        router.push(`/test/${sessionId}/dashboard`);
       }
     } catch (e) {
       toast.error("Não foi possível compartilhar", { description: (e as Error).message });

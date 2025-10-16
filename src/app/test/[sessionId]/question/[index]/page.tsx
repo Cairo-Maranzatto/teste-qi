@@ -22,6 +22,15 @@ export default function QuestionPage({ params }: Params) {
   const [navMessage, setNavMessage] = useState<string>("Carregando...");
   const progressKey = useMemo(() => `test_max_index_${sessionId}`, [sessionId]);
   const reportElapsedMs = useMemo(() => (DURATION - remaining) * 1000, [remaining]);
+  type Option = { id: string; label: string };
+  type QuestionDTO = {
+    id: string;
+    stem: string;
+    options: Option[];
+    meta: { domain: string; difficulty: string; type: string; timeTargetSec: number };
+  };
+  const [q, setQ] = useState<QuestionDTO | null>(null);
+  const [qLoading, setQLoading] = useState<boolean>(true);
   
   useEffect(() => {
     // Inicializa startTime se não existir
@@ -106,6 +115,31 @@ export default function QuestionPage({ params }: Params) {
       }
     } catch {}
   }, [qIndex, progressKey, router, sessionId]);
+ 
+  // Carregar questão real do servidor
+  useEffect(() => {
+    let cancelled = false;
+    setQLoading(true);
+    setQ(null);
+    setSelected(null);
+    (async () => {
+      try {
+        const res = await fetch(`/api/test/question?sessionId=${sessionId}&index=${qIndex}`, { cache: "no-store" });
+        const j = await res.json();
+        if (!res.ok) throw new Error(j?.error || "Falha ao carregar a questão");
+        if (!cancelled) setQ(j as QuestionDTO);
+      } catch (e) {
+        if (!cancelled) {
+          toast.error("Não foi possível carregar a questão", { description: (e as Error).message });
+        }
+      } finally {
+        if (!cancelled) setQLoading(false);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [sessionId, qIndex]);
   
   const timeText = useMemo(() => {
     const mm = String(Math.floor(remaining / 60)).padStart(2, "0");
@@ -139,8 +173,6 @@ export default function QuestionPage({ params }: Params) {
         qIndex,
         choiceId: skipped ? null : selected,
         skipped,
-        // MVP: sem banco de questões, não avaliamos correção aqui
-        correct: false,
         timeMs: reportElapsedMs,
       };
       const json = JSON.stringify(payload);
@@ -191,26 +223,26 @@ export default function QuestionPage({ params }: Params) {
         <div className="rounded-xl border p-4 shadow-sm">
           <h1 className="mt-1 text-xl font-bold">Questão {qIndex}</h1>
           <div id="question-stem" className="mt-2 text-sm">
-            Enunciado da pergunta...
+            {qLoading ? "Carregando…" : q?.stem || "—"}
           </div>
           <div className="mt-3 grid grid-cols-1 gap-2 md:grid-cols-2" role="group" aria-label="Alternativas">
-            {(["A", "B", "C", "D"] as const).map((key) => (
+            {(q?.options ?? []).map((opt) => (
               <button
-                key={key}
-                onClick={() => setSelected(key)}
-                aria-pressed={selected === key}
+                key={opt.id}
+                onClick={() => setSelected(opt.id)}
+                aria-pressed={selected === opt.id}
                 className={`w-full rounded-md border px-3 py-2 text-left hover:bg-muted ${
-                  selected === key ? "ring-2 ring-ring" : ""
+                  selected === opt.id ? "ring-2 ring-ring" : ""
                 }`}
               >
-                Alternativa {key}
+                {opt.label}
               </button>
             ))}
           </div>
           <div className="mt-3 flex items-center gap-2">
             <button
               onClick={handleAnswer}
-              disabled={!selected || isNavigating}
+              disabled={!selected || isNavigating || qLoading}
               className="rounded-md bg-black px-4 py-2 text-white hover:opacity-90 cursor-pointer disabled:opacity-60 disabled:cursor-not-allowed"
             >
               Responder

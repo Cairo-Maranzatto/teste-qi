@@ -1,0 +1,754 @@
+[
+  {
+    "id": "q001",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Qual número completa a sequência? 3, 6, 12, 24, ?",
+    "options": [
+      { "id": "A", "label": "34" },
+      { "id": "B", "label": "36" },
+      { "id": "C", "label": "40" },
+      { "id": "D", "label": "48" }
+    ],
+    "correctId": "D"
+  },
+  {
+    "id": "q002",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Complete: 1, 4, 9, 16, ?",
+    "options": [
+      { "id": "A", "label": "20" },
+      { "id": "B", "label": "24" },
+      { "id": "C", "label": "25" },
+      { "id": "D", "label": "27" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q003",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Complete: 10, 9, 7, 4, ?",
+    "options": [
+      { "id": "A", "label": "2" },
+      { "id": "B", "label": "1" },
+      { "id": "C", "label": "0" },
+      { "id": "D", "label": "-1" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q004",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Complete: 2, 3, 5, 8, ?",
+    "options": [
+      { "id": "A", "label": "10" },
+      { "id": "B", "label": "12" },
+      { "id": "C", "label": "13" },
+      { "id": "D", "label": "14" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q005",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 5, 10, 20, 35, 55, ?",
+    "options": [
+      { "id": "A", "label": "70" },
+      { "id": "B", "label": "75" },
+      { "id": "C", "label": "80" },
+      { "id": "D", "label": "90" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q006",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 2, 5, 11, 23, 47, ?",
+    "options": [
+      { "id": "A", "label": "93" },
+      { "id": "B", "label": "95" },
+      { "id": "C", "label": "97" },
+      { "id": "D", "label": "99" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q007",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 81, 27, 9, 3, ?",
+    "options": [
+      { "id": "A", "label": "1" },
+      { "id": "B", "label": "2" },
+      { "id": "C", "label": "0" },
+      { "id": "D", "label": "-1" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q008",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 1, 2, 4, 7, 11, ?",
+    "options": [
+      { "id": "A", "label": "14" },
+      { "id": "B", "label": "15" },
+      { "id": "C", "label": "16" },
+      { "id": "D", "label": "17" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q009",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 11, 13, 17, 19, 23, ?",
+    "options": [
+      { "id": "A", "label": "25" },
+      { "id": "B", "label": "27" },
+      { "id": "C", "label": "29" },
+      { "id": "D", "label": "31" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q010",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 2, 3, 5, 9, 17, ?",
+    "options": [
+      { "id": "A", "label": "31" },
+      { "id": "B", "label": "33" },
+      { "id": "C", "label": "35" },
+      { "id": "D", "label": "37" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q011",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 1, 1, 2, 3, 5, 8, ?",
+    "options": [
+      { "id": "A", "label": "11" },
+      { "id": "B", "label": "12" },
+      { "id": "C", "label": "13" },
+      { "id": "D", "label": "14" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q012",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 4, 6, 9, 13, 18, ?",
+    "options": [
+      { "id": "A", "label": "22" },
+      { "id": "B", "label": "23" },
+      { "id": "C", "label": "24" },
+      { "id": "D", "label": "25" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q013",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 2, 4, 3, 6, 5, 10, ?",
+    "options": [
+      { "id": "A", "label": "9" },
+      { "id": "B", "label": "11" },
+      { "id": "C", "label": "12" },
+      { "id": "D", "label": "13" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q014",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 7, 14, 12, 24, 20, 40, ?",
+    "options": [
+      { "id": "A", "label": "30" },
+      { "id": "B", "label": "32" },
+      { "id": "C", "label": "34" },
+      { "id": "D", "label": "36" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q015",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 32, 16, 24, 12, 18, 9, ?",
+    "options": [
+      { "id": "A", "label": "12" },
+      { "id": "B", "label": "13" },
+      { "id": "C", "label": "14" },
+      { "id": "D", "label": "15" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q016",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete: 3, 9, 27, 81, ?",
+    "options": [
+      { "id": "A", "label": "162" },
+      { "id": "B", "label": "180" },
+      { "id": "C", "label": "243" },
+      { "id": "D", "label": "324" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q017",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Complete: 1, 2, 6, 24, 120, ?",
+    "options": [
+      { "id": "A", "label": "240" },
+      { "id": "B", "label": "360" },
+      { "id": "C", "label": "600" },
+      { "id": "D", "label": "720" }
+    ],
+    "correctId": "D"
+  },
+  {
+    "id": "q018",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Complete: 1, 4, 3, 12, 9, 36, ?",
+    "options": [
+      { "id": "A", "label": "27" },
+      { "id": "B", "label": "30" },
+      { "id": "C", "label": "31" },
+      { "id": "D", "label": "33" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q019",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Complete: 2, 5, 14, 41, 122, ?",
+    "options": [
+      { "id": "A", "label": "245" },
+      { "id": "B", "label": "365" },
+      { "id": "C", "label": "366" },
+      { "id": "D", "label": "367" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q020",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Complete: 0, 0, 1, 1, 2, 4, 7, 13, ? (Tribonacci)",
+    "options": [
+      { "id": "A", "label": "20" },
+      { "id": "B", "label": "21" },
+      { "id": "C", "label": "23" },
+      { "id": "D", "label": "24" }
+    ],
+    "correctId": "D"
+  },
+
+  {
+    "id": "q021",
+    "domain": "logica",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Todos os A são B. Alguns B são C. Podemos concluir: Alguns A são C.",
+    "options": [
+      { "id": "A", "label": "Verdadeiro" },
+      { "id": "B", "label": "Falso" },
+      { "id": "C", "label": "Não necessariamente" },
+      { "id": "D", "label": "Impossível determinar" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q022",
+    "domain": "logica",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Se hoje é quarta-feira, que dia será 2 dias após o dia anterior a amanhã?",
+    "options": [
+      { "id": "A", "label": "Quinta-feira" },
+      { "id": "B", "label": "Sexta-feira" },
+      { "id": "C", "label": "Sábado" },
+      { "id": "D", "label": "Domingo" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q023",
+    "domain": "logica",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "A sempre diz a verdade. B às vezes mente. B afirma: 'A está mentindo'. O que é correto?",
+    "options": [
+      { "id": "A", "label": "A está mentindo" },
+      { "id": "B", "label": "B está dizendo a verdade" },
+      { "id": "C", "label": "B está mentindo" },
+      { "id": "D", "label": "Não é possível saber" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q024",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Se chove, então levo guarda-chuva. Não levei guarda-chuva. Conclusão válida?",
+    "options": [
+      { "id": "A", "label": "Choveu" },
+      { "id": "B", "label": "Não choveu" },
+      { "id": "C", "label": "Levei capa de chuva" },
+      { "id": "D", "label": "Não há conclusão válida" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q025",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "De 1 a 100 (inclusive), quantos números são múltiplos de 6?",
+    "options": [
+      { "id": "A", "label": "14" },
+      { "id": "B", "label": "15" },
+      { "id": "C", "label": "16" },
+      { "id": "D", "label": "17" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q026",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Três interruptores controlam três lâmpadas em outra sala. Você pode entrar na sala das lâmpadas apenas uma vez. Como descobrir qual interruptor controla qual lâmpada?",
+    "options": [
+      { "id": "A", "label": "Ligar um de cada vez e entrar três vezes" },
+      { "id": "B", "label": "Ligar dois e entrar uma vez" },
+      { "id": "C", "label": "Ligar um por alguns minutos, desligá-lo, ligar outro e então entrar para verificar luz e calor" },
+      { "id": "D", "label": "Não é possível" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q027",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Um trem sai às 09:00 a 60 km/h. Outro sai às 09:30 do mesmo local a 80 km/h na mesma direção. Às quantas horas o segundo alcança o primeiro?",
+    "options": [
+      { "id": "A", "label": "10:30" },
+      { "id": "B", "label": "11:00" },
+      { "id": "C", "label": "11:30" },
+      { "id": "D", "label": "12:00" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q028",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Lançando duas moedas justas, qual a probabilidade de dar exatamente uma cara?",
+    "options": [
+      { "id": "A", "label": "25%" },
+      { "id": "B", "label": "33%" },
+      { "id": "C", "label": "50%" },
+      { "id": "D", "label": "75%" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q029",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Qual não pertence ao grupo? quadrado, triângulo, círculo, cubo",
+    "options": [
+      { "id": "A", "label": "quadrado" },
+      { "id": "B", "label": "triângulo" },
+      { "id": "C", "label": "círculo" },
+      { "id": "D", "label": "cubo" }
+    ],
+    "correctId": "D"
+  },
+  {
+    "id": "q030",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Todos os gatos são mamíferos. Nenhum mamífero é réptil. Conclusão: Nenhum gato é réptil.",
+    "options": [
+      { "id": "A", "label": "Verdadeiro" },
+      { "id": "B", "label": "Falso" },
+      { "id": "C", "label": "Não necessariamente" },
+      { "id": "D", "label": "Indeterminado" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q031",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "João tem o dobro da idade de Ana. Daqui a 10 anos, a soma das idades será 80. Quais são as idades atuais?",
+    "options": [
+      { "id": "A", "label": "Ana 20, João 40" },
+      { "id": "B", "label": "Ana 18, João 36" },
+      { "id": "C", "label": "Ana 22, João 44" },
+      { "id": "D", "label": "Ana 25, João 50" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q032",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Qual é o ângulo entre os ponteiros às 3:20?",
+    "options": [
+      { "id": "A", "label": "0°" },
+      { "id": "B", "label": "10°" },
+      { "id": "C", "label": "20°" },
+      { "id": "D", "label": "30°" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q033",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete a sequência de letras: A, C, F, J, O, ?",
+    "options": [
+      { "id": "A", "label": "S" },
+      { "id": "B", "label": "T" },
+      { "id": "C", "label": "U" },
+      { "id": "D", "label": "V" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q034",
+    "domain": "logica",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Na ilha, cavaleiros sempre dizem a verdade e vassalos sempre mentem. A diz: 'B é vassalo'. B diz: 'Somos de tipos diferentes'. Quem é quem?",
+    "options": [
+      { "id": "A", "label": "A cavaleiro, B vassalo" },
+      { "id": "B", "label": "A vassalo, B cavaleiro" },
+      { "id": "C", "label": "Ambos cavaleiros" },
+      { "id": "D", "label": "Ambos vassalos" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q035",
+    "domain": "logica",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Há três caixas rotuladas 'maçãs', 'laranjas' e 'mistas', mas todas estão rotuladas incorretamente. Você pode retirar uma fruta de apenas uma caixa. De qual caixa deve retirar para corrigir todos os rótulos?",
+    "options": [
+      { "id": "A", "label": "'maçãs'" },
+      { "id": "B", "label": "'laranjas'" },
+      { "id": "C", "label": "'mistas'" },
+      { "id": "D", "label": "Qualquer uma" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q036",
+    "domain": "logica",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Das premissas: Se P então Q. Se Q então R. Conclusão logicamente válida:",
+    "options": [
+      { "id": "A", "label": "Se R então P" },
+      { "id": "B", "label": "Se P então R" },
+      { "id": "C", "label": "Se não P então não R" },
+      { "id": "D", "label": "R é verdadeiro" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q037",
+    "domain": "logica",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Em uma pesquisa: 40% gostam de A, 50% gostam de B e 10% não gostam de nenhum. Qual o mínimo possível que gostam de ambos (A e B)?",
+    "options": [
+      { "id": "A", "label": "0%" },
+      { "id": "B", "label": "5%" },
+      { "id": "C", "label": "10%" },
+      { "id": "D", "label": "20%" }
+    ],
+    "correctId": "A"
+  },
+
+  {
+    "id": "q038",
+    "domain": "verbal",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Analogia: Cão está para latir assim como gato está para...",
+    "options": [
+      { "id": "A", "label": "miar" },
+      { "id": "B", "label": "piar" },
+      { "id": "C", "label": "mugir" },
+      { "id": "D", "label": "grasnar" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q039",
+    "domain": "verbal",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Sinônimo de 'rápido':",
+    "options": [
+      { "id": "A", "label": "lerdo" },
+      { "id": "B", "label": "veloz" },
+      { "id": "C", "label": "vagaroso" },
+      { "id": "D", "label": "tardio" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q040",
+    "domain": "verbal",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Antônimo de 'escasso':",
+    "options": [
+      { "id": "A", "label": "raro" },
+      { "id": "B", "label": "parco" },
+      { "id": "C", "label": "abundante" },
+      { "id": "D", "label": "insuficiente" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q041",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Analogia: Faca está para cortar assim como caneta está para...",
+    "options": [
+      { "id": "A", "label": "apontar" },
+      { "id": "B", "label": "escrever" },
+      { "id": "C", "label": "tampar" },
+      { "id": "D", "label": "rabiscar" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q042",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Qual palavra não pertence: cadeira, mesa, sofá, colher",
+    "options": [
+      { "id": "A", "label": "cadeira" },
+      { "id": "B", "label": "mesa" },
+      { "id": "C", "label": "sofá" },
+      { "id": "D", "label": "colher" }
+    ],
+    "correctId": "D"
+  },
+  {
+    "id": "q043",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Analogia: Pintor está para quadro como escritor está para...",
+    "options": [
+      { "id": "A", "label": "letra" },
+      { "id": "B", "label": "livro" },
+      { "id": "C", "label": "tinta" },
+      { "id": "D", "label": "teatro" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q044",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Complete a sequência de letras: B, D, G, K, P, ?",
+    "options": [
+      { "id": "A", "label": "U" },
+      { "id": "B", "label": "V" },
+      { "id": "C", "label": "W" },
+      { "id": "D", "label": "X" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q045",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Qual prefixo em português indica negação?",
+    "options": [
+      { "id": "A", "label": "re-" },
+      { "id": "B", "label": "pre-" },
+      { "id": "C", "label": "in-" },
+      { "id": "D", "label": "sub-" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q046",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Qual termo é mais geral (hiperônimo) dos demais?",
+    "options": [
+      { "id": "A", "label": "ave" },
+      { "id": "B", "label": "pardal" },
+      { "id": "C", "label": "animal" },
+      { "id": "D", "label": "pinguim" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q047",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Analogia: Frio está para gelado assim como quente está para...",
+    "options": [
+      { "id": "A", "label": "fervente" },
+      { "id": "B", "label": "morno" },
+      { "id": "C", "label": "árido" },
+      { "id": "D", "label": "úmido" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q048",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Qual o plural correto de 'cidadão'?",
+    "options": [
+      { "id": "A", "label": "cidadãos" },
+      { "id": "B", "label": "cidadões" },
+      { "id": "C", "label": "cidadães" },
+      { "id": "D", "label": "cidadãoses" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q049",
+    "domain": "verbal",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Analogia: Meticuloso está para descuidado assim como parcimonioso está para...",
+    "options": [
+      { "id": "A", "label": "econômico" },
+      { "id": "B", "label": "prudente" },
+      { "id": "C", "label": "perdulário" },
+      { "id": "D", "label": "sóbrio" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q050",
+    "domain": "verbal",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Escolha a melhor paráfrase para o provérbio: 'Quem com ferro fere, com ferro será ferido'.",
+    "options": [
+      { "id": "A", "label": "Quem erra, esquece" },
+      { "id": "B", "label": "O que vai, volta" },
+      { "id": "C", "label": "Quem muito espera, pouco alcança" },
+      { "id": "D", "label": "Depois da tempestade vem a bonança" }
+    ],
+    "correctId": "B"
+  }
+]

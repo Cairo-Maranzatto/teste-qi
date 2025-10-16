@@ -31,11 +31,17 @@ export default function OptInRankingButton({ sessionId }: { sessionId: string })
   };
 
   return (
-    <div className="flex flex-col items-stretch gap-2 sm:flex-row sm:items-center">
+    <div
+      className={
+        submitted
+          ? "flex flex-col items-center sm:flex-row sm:justify-center"
+          : "flex flex-col items-stretch gap-2 sm:flex-row sm:items-center"
+      }
+    >
       {submitted ? (
         <button
           onClick={() => router.replace("/")}
-          className="rounded-md border px-4 py-2 text-sm"
+          className="self-center rounded-md border px-4 py-2 text-sm"
         >
           Ver ranking
         </button>

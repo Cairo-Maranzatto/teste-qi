@@ -11,6 +11,7 @@ export default function CheckoutClient() {
   const [missingSession, setMissingSession] = useState(false);
   const sessionFromQuery = sp.get("session") || sp.get("sessionId") || "";
   const isRetest = sp.get("retest") === "1";
+  const allowForcePaid = process.env.NODE_ENV !== "production" && process.env.NEXT_PUBLIC_ALLOW_FORCE_PAID === "1";
 
   useEffect(() => {
     if (!sessionFromQuery) {
@@ -23,7 +24,7 @@ export default function CheckoutClient() {
 
   const handleForcePaidDev = useCallback(async () => {
     try {
-      if (process.env.NODE_ENV === "production") return;
+      if (process.env.NODE_ENV === "production" || process.env.NEXT_PUBLIC_ALLOW_FORCE_PAID !== "1") return;
       const sessionId = sessionFromQuery;
       if (!sessionId) return;
       const res = await fetch("/api/dev/force-paid", {
@@ -139,7 +140,7 @@ export default function CheckoutClient() {
             Verificar status agora
           </button>
         )}
-        {process.env.NODE_ENV !== "production" && (
+        {allowForcePaid && (
           <button
             type="button"
             onClick={handleForcePaidDev}
