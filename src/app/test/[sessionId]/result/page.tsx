@@ -5,6 +5,9 @@ import { eq } from "drizzle-orm";
 import { bandFromIQ } from "@/lib/scoring/bands";
 import { testSessions } from "@/db/schema/sessions";
 import OptInRankingButton from "@/components/OptInRankingButton";
+import ShareResultButton from "@/components/ShareResultButton";
+import RetestButton from "@/components/RetestButton";
+import CheckoutLink from "@/components/CheckoutLink";
 
 type Props = { params: { sessionId: string }; searchParams?: { [k: string]: string | string[] | undefined } };
 
@@ -45,12 +48,7 @@ export default async function ResultPage({ params, searchParams }: Props) {
           <div className="mt-3 text-sm">
             Seu resultado completo ficará disponível após a confirmação do pagamento.
             <div className="mt-3">
-              <a
-                href={`/checkout?session=${sessionId}`}
-                className="inline-flex items-center justify-center rounded-md bg-black px-4 py-3 text-white"
-              >
-                Ir para o checkout
-              </a>
+              <CheckoutLink sessionId={sessionId} />
             </div>
           </div>
         ) : iq !== null ? (
@@ -83,14 +81,8 @@ export default async function ResultPage({ params, searchParams }: Props) {
       </div>
 
       <div className="flex flex-col gap-2">
-        <button className="rounded-md border px-4 py-2">Compartilhar</button>
-        <button className="rounded-md border px-4 py-2">Entrar no ranking (opt-in)</button>
-        <a
-          href={`/checkout?retest=1&session=${sessionId}`}
-          className="inline-flex items-center justify-center rounded-md bg-black px-4 py-3 text-white"
-        >
-          Refazer por R$ 2
-        </a>
+        <ShareResultButton sessionId={sessionId} iq={iq} percentile={percentile} bandText={bandInfo ? `${bandInfo.band} — ${bandInfo.text}` : null} />
+        <RetestButton />
       </div>
       <div className="text-center text-xs text-muted-foreground">Teste recreativo. Não substitui avaliação clínica.</div>
     </main>

@@ -111,10 +111,10 @@ export default function CheckoutClient() {
   return (
     <main className="mx-auto max-w-2xl p-6 md:p-8">
       <div className="mx-auto w-full rounded-xl border p-5 shadow-sm md:max-w-md">
-        <h1 className="text-2xl md:text-3xl font-bold">Acesse seu resultado completo</h1>
+        <h1 className="text-2xl md:text-3xl font-bold">Acesse seu resultado completo por apenas</h1>
         <div className="mt-2 flex items-center gap-2">
           <span className="text-2xl md:text-3xl font-extrabold tabular-nums">
-            {isRetest ? "R$ 2" : "R$ 5"}
+            {isRetest ? "R$ 2,00" : "R$ 5,00"}
           </span>
           <span className="rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-700">PIX recomendado</span>
         </div>
@@ -128,7 +128,7 @@ export default function CheckoutClient() {
           disabled={loading}
           className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-black px-4 py-3 text-white disabled:opacity-60"
         >
-          {loading ? "Redirecionando..." : isRetest ? "Pagar R$ 2 (Refazer)" : "Pagar R$ 5"}
+          {loading ? "Redirecionando..." : isRetest ? "Pagar R$ 2,00 (Refazer)" : "Pagar R$ 5,00"}
         </button>
         {sp.get("status") === "pending" && (
           <button
