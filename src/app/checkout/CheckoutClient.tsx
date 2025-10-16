@@ -68,7 +68,10 @@ export default function CheckoutClient() {
       });
       const j = await res.json();
       if (!res.ok || !j?.init_point) throw new Error(j?.error || "Falha ao criar preferência");
-      window.location.href = j.init_point as string;
+      const opened = window.open(j.init_point as string, "_blank", "noopener,noreferrer");
+      if (!opened) {
+        window.location.href = j.init_point as string;
+      }
     } catch (e) {
       toast.error("Falha no checkout", { description: (e as Error).message });
     } finally {
@@ -128,7 +131,7 @@ export default function CheckoutClient() {
           disabled={loading}
           className="mt-4 inline-flex w-full items-center justify-center rounded-md bg-black px-4 py-3 text-white disabled:opacity-60"
         >
-          {loading ? "Redirecionando..." : isRetest ? "Pagar R$ 2 (Refazer)" : "Pagar R$ 5"}
+          {loading ? "Abrindo checkout..." : isRetest ? "Pagar R$ 2 (Refazer)" : "Pagar R$ 5"}
         </button>
         {sp.get("status") === "pending" && (
           <button
