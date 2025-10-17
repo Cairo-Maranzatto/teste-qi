@@ -3,6 +3,7 @@
 import { useCallback, useMemo, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { toast } from "sonner";
+import { trackCustom } from "@/lib/pixel";
 
 export default function StartClient() {
   const router = useRouter();
@@ -27,6 +28,7 @@ export default function StartClient() {
       });
       const j = await res.json();
       if (!res.ok || !j?.sessionId) throw new Error(j?.error || "Falha ao criar sessão");
+      try { trackCustom("start_test", { session_id: j.sessionId }); } catch {}
       router.push(`/test/${j.sessionId}/question/1`);
     } catch (e) {
       toast.error("Não foi possível iniciar o teste", { description: (e as Error).message });

@@ -3,6 +3,7 @@
 import { useCallback, useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { toast } from "sonner";
+import { track, trackCustom } from "@/lib/pixel";
 
 export default function CheckoutClient() {
   const router = useRouter();
@@ -21,6 +22,13 @@ export default function CheckoutClient() {
       return () => clearTimeout(id);
     }
   }, [sessionFromQuery, router]);
+
+  useEffect(() => {
+    if (!sessionFromQuery) return;
+    try {
+      trackCustom("reach_paywall", { session_id: sessionFromQuery, retest: isRetest ? 1 : 0 });
+    } catch {}
+  }, [sessionFromQuery, isRetest]);
 
   const handleForcePaidDev = useCallback(async () => {
     try {
@@ -62,6 +70,9 @@ export default function CheckoutClient() {
       if (!sessionId) {
         throw new Error("Sessão inválida ou ausente. Volte e inicie o teste novamente.");
       }
+      try {
+        track("InitiateCheckout", { value: isRetest ? 1.99 : 4.99, currency: "BRL", session_id: sessionId, retest: isRetest ? 1 : 0 });
+      } catch {}
       const res = await fetch("/api/payments/create-preference", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

@@ -10,6 +10,7 @@ import RetestButton from "@/components/RetestButton";
 import CheckoutLink from "@/components/CheckoutLink";
 import { answers } from "@/db/schema/answers";
 import { getOrderedSelection } from "@/lib/questions/engine";
+import ViewResultPixel from "@/components/ViewResultPixel";
 
 type Props = { params: { sessionId: string }; searchParams?: { [k: string]: string | string[] | undefined } };
 
@@ -86,6 +87,7 @@ export default async function ResultPage({ params, searchParams }: Props) {
           </div>
         ) : iq !== null ? (
           <>
+            <ViewResultPixel sessionId={sessionId} iq={iq} percentile={percentile} band={bandInfo ? bandInfo.band : null} isPaid={Boolean(isPaid || preview)} />
             <div className="mt-4 mx-auto grid place-items-center">
               <div
                 className="relative grid h-36 w-36 place-items-center rounded-full"
