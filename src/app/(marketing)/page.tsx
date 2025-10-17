@@ -7,28 +7,28 @@ export default function Page() {
       <div className="grid gap-6 md:grid-cols-2 md:items-start">
         {/* Coluna esquerda: hero + KPIs + CTA */}
         <section className="space-y-4">
-          <h1 className="text-3xl font-bold leading-tight md:text-4xl">
-            Descubra seu QI em 5–7 minutos
+          <h1 className="text-center text-3xl font-bold leading-tight md:text-4xl">
+            Descubra o seu QI
           </h1>
           <p className="text-sm text-muted-foreground md:text-base">
             Responda 30 questões rápidas. Veja seu número de QI, percentil e interpretação.
           </p>
           <div className="grid grid-cols-1 gap-2">
             <div className="rounded-lg border p-3 text-sm md:text-base">Rápido e simples (30 questões)</div>
-            <div className="rounded-lg border p-3 text-sm md:text-base">Resultado com número de QI e percentil</div>
+            <div className="rounded-lg border p-3 text-sm md:text-base">Resultado com número de QI e métricas</div>
             <div className="rounded-lg border p-3 text-sm md:text-base">Compartilhe seu resultado</div>
           </div>
           <div className="grid grid-cols-3 gap-2 pt-1">
             <div className="rounded-lg border p-3 text-center">
-              <div className="text-base font-semibold md:text-lg">5–7 min</div>
-              <div className="text-xs text-muted-foreground">Tempo médio</div>
+              <div className="text-base font-semibold md:text-lg">15 min</div>
+              <div className="text-xs text-muted-foreground">Tempo total</div>
             </div>
             <div className="rounded-lg border p-3 text-center">
               <div className="text-base font-semibold md:text-lg">4.8/5</div>
               <div className="text-xs text-muted-foreground">Avaliações</div>
             </div>
             <div className="rounded-lg border p-3 text-center">
-              <div className="text-base font-semibold md:text-lg">Mobile</div>
+              <div className="text-base font-semibold md:text-lg">Acessibilidade</div>
               <div className="text-xs text-muted-foreground">Experiência</div>
             </div>
           </div>

@@ -4,6 +4,7 @@ import { db } from "@/db";
 import { testSessions } from "@/db/schema/sessions";
 import { eq } from "drizzle-orm";
 import { getQuestionByIndex } from "@/lib/questions/engine";
+import { seededShuffle } from "@/lib/random";
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
@@ -28,7 +29,8 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({
       id: q.id,
       stem: q.stem,
-      options: q.options.map((o) => ({ id: o.id, label: o.label })),
+      // embaralhar opções de forma determinística por sessão/índice
+      options: seededShuffle(q.options, `${seed}|${q.id}|${index}`).map((o) => ({ id: o.id, label: o.label })),
       meta: { domain: q.domain, difficulty: q.difficulty, type: q.type, timeTargetSec: q.timeTargetSec },
     });
   } catch (e: any) {

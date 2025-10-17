@@ -33,7 +33,7 @@ export default function RetestButton() {
 
   return (
     <button onClick={handleRetest} disabled={loading} className="inline-flex items-center justify-center rounded-md bg-black px-4 py-3 text-white disabled:opacity-60">
-      {loading ? "Iniciando..." : "Refazer por R$ 2,00"}
+      {loading ? "Iniciando..." : "Refazer por R$ 1,99"}
     </button>
   );
 }

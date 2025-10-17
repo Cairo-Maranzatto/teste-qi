@@ -11,8 +11,8 @@ export default function QuestionPage({ params }: Params) {
   const totalQuestions = 30;
   const qIndex = useMemo(() => Math.max(1, Math.min(totalQuestions, Number(index) || 1)), [index]);
   const [selected, setSelected] = useState<string | null>(null);
-  // Timer: 6 minutos (360s), persistente por sessão
-  const DURATION = 360; // segundos
+  // Timer: 15 minutos (900s), persistente por sessão
+  const DURATION = 900; // segundos
   const storageKey = `test_timer_start_${sessionId}`;
   const [remaining, setRemaining] = useState<number>(DURATION);
   const [timedOut, setTimedOut] = useState(false);

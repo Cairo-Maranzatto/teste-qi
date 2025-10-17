@@ -40,10 +40,13 @@ export default function StartClient() {
       <h1 className="text-2xl md:text-3xl font-bold">Como funciona</h1>
       <ul className="list-disc pl-6 text-sm md:text-base text-muted-foreground space-y-1">
         <li>30 questões de múltipla escolha (4 alternativas, 1 correta)</li>
-        <li>Tempo total: 6:00 (+30s para concluir a questão atual)</li>
+        <li>Tempo total: 15:00 (+30s para concluir a questão atual)</li>
         <li>Não é possível voltar nas questões já respondidas</li>
         <li>“Pular” conta como errado (desabilitado nos últimos 10s)</li>
       </ul>
+      <div className="text-sm md:text-base text-muted-foreground">
+        Questões curtas. Muitas pessoas se surpreendem positivamente com seus resultados.
+      </div>
 
       <button
         onClick={handleStart}
