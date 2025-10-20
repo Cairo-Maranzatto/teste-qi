@@ -14,6 +14,7 @@ export const env = {
   DATABASE_URL: sanitize(process.env.DATABASE_URL, ""),
   MP_ACCESS_TOKEN: sanitize(process.env.MP_ACCESS_TOKEN, ""),
   MP_WEBHOOK_SECRET: sanitize(process.env.MP_WEBHOOK_SECRET, ""),
+  MP_ENV: sanitize(process.env.MP_ENV, "0"),
   NEXT_PUBLIC_META_PIXEL_ID: sanitize(process.env.NEXT_PUBLIC_META_PIXEL_ID, ""),
   META_ACCESS_TOKEN: sanitize(process.env.META_ACCESS_TOKEN, ""),
   META_TEST_EVENT_CODE: sanitize(process.env.META_TEST_EVENT_CODE, ""),

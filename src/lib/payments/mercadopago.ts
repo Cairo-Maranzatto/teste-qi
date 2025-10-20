@@ -28,6 +28,9 @@ export async function createPreference(input: CreatePreferenceInput) {
     allowAutoReturn = false;
   }
 
+  const extRefRaw = [input.sessionId, input.fbp ?? "", input.fbc ?? ""].join("|");
+  const extRef = extRefRaw.replace(/\s+/g, " ").slice(0, 200);
+
   const body: any = {
     items: [
       {
@@ -43,7 +46,7 @@ export async function createPreference(input: CreatePreferenceInput) {
       failure: input.backUrlFailure,
       pending: input.backUrlPending,
     },
-    external_reference: [input.sessionId, input.fbp ?? "", input.fbc ?? ""].join("|"),
+    external_reference: extRef,
     metadata: input.metadata ?? {},
     notification_url: `${env.SITE_URL}/api/payments/webhooks/mercadopago`,
   };

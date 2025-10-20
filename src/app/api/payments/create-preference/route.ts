@@ -50,9 +50,12 @@ export async function POST(req: Request) {
         .onConflictDoNothing();
     } catch {}
 
+    const isTestEnv = (env.MP_ENV || "0") === "1";
+    const initPoint = isTestEnv ? (pref.sandbox_init_point ?? pref.init_point ?? null) : (pref.init_point ?? pref.sandbox_init_point ?? null);
+
     return NextResponse.json({
       id: pref.id,
-      init_point: pref.init_point ?? pref.sandbox_init_point ?? null,
+      init_point: initPoint,
       sessionId,
       amountCents,
     });
