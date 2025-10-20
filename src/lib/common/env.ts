@@ -15,5 +15,7 @@ export const env = {
   MP_ACCESS_TOKEN: sanitize(process.env.MP_ACCESS_TOKEN, ""),
   MP_WEBHOOK_SECRET: sanitize(process.env.MP_WEBHOOK_SECRET, ""),
   NEXT_PUBLIC_META_PIXEL_ID: sanitize(process.env.NEXT_PUBLIC_META_PIXEL_ID, ""),
+  META_ACCESS_TOKEN: sanitize(process.env.META_ACCESS_TOKEN, ""),
+  META_TEST_EVENT_CODE: sanitize(process.env.META_TEST_EVENT_CODE, ""),
   SITE_URL: sanitizeBaseUrl(process.env.SITE_URL, "http://localhost:3000"),
 };

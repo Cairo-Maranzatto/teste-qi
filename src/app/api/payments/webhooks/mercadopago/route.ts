@@ -5,6 +5,7 @@ import { db } from "@/db";
 import { payments } from "@/db/schema/payments";
 import { testSessions } from "@/db/schema/sessions";
 import { eq } from "drizzle-orm";
+import { sendPurchaseFromWebhook } from "@/lib/meta/capi";
 
 function extractPaymentId(body: any, url: URL): string | null {
   // Tentar formatos comuns do MP
@@ -76,6 +77,17 @@ export async function POST(req: Request) {
     // Se aprovado, marcar sessão como 'paid'
     if (p.status === "approved" && sessionId) {
       await db.update(testSessions).set({ paid: true as any }).where(eq(testSessions.id, sessionId));
+      try {
+        await sendPurchaseFromWebhook({
+          providerPaymentId,
+          amountCents,
+          sessionId,
+          payerEmail,
+          externalReferenceRaw: p.external_reference ?? null,
+        });
+      } catch (e) {
+        // não falhar o webhook por erro da CAPI
+      }
     }
 
     return NextResponse.json({ ok: true });

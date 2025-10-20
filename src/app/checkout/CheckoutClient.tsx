@@ -3,7 +3,7 @@
 import { useCallback, useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { toast } from "sonner";
-import { track, trackCustom } from "@/lib/pixel";
+import { track, trackCustom, getFbp, getFbc } from "@/lib/pixel";
 
 export default function CheckoutClient() {
   const router = useRouter();
@@ -73,10 +73,12 @@ export default function CheckoutClient() {
       try {
         track("InitiateCheckout", { value: isRetest ? 1.99 : 4.99, currency: "BRL", session_id: sessionId, retest: isRetest ? 1 : 0 });
       } catch {}
+      const fbp = getFbp();
+      const fbc = getFbc();
       const res = await fetch("/api/payments/create-preference", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ sessionId, retest: isRetest }),
+        body: JSON.stringify({ sessionId, retest: isRetest, fbp, fbc }),
       });
       const j = await res.json();
       if (!res.ok || !j?.init_point) throw new Error(j?.error || "Falha ao criar preferência");

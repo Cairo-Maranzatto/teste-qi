@@ -9,6 +9,8 @@ type CreatePreferenceInput = {
   backUrlFailure: string;
   backUrlPending: string;
   metadata?: Record<string, unknown>;
+  fbp?: string | null;
+  fbc?: string | null;
 };
 
 export async function createPreference(input: CreatePreferenceInput) {
@@ -41,7 +43,7 @@ export async function createPreference(input: CreatePreferenceInput) {
       failure: input.backUrlFailure,
       pending: input.backUrlPending,
     },
-    external_reference: input.sessionId,
+    external_reference: [input.sessionId, input.fbp ?? "", input.fbc ?? ""].join("|"),
     metadata: input.metadata ?? {},
     notification_url: `${env.SITE_URL}/api/payments/webhooks/mercadopago`,
   };

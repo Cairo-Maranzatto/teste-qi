@@ -30,6 +30,8 @@ export async function POST(req: Request) {
       backUrlFailure,
       backUrlPending,
       metadata: body?.metadata ?? {},
+      fbp: typeof body?.fbp === "string" ? body.fbp : undefined,
+      fbc: typeof body?.fbc === "string" ? body.fbc : undefined,
     });
 
     // Registrar pagamento pendente vinculado à sessão (por preferenceId)
@@ -43,7 +45,7 @@ export async function POST(req: Request) {
           preferenceId: String(pref.id),
           amountCents,
           status: "pending",
-          externalReference: sessionId,
+          externalReference: pref.external_reference ?? sessionId,
         })
         .onConflictDoNothing();
     } catch {}

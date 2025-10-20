@@ -30,3 +30,30 @@ export function trackCustom(event: string, params?: Record<string, any>) {
   else fbq("trackCustom", event);
   return true;
 }
+
+function readCookie(name: string): string | null {
+  if (typeof document === "undefined") return null;
+  const m = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([.$?*|{}()\[\]\\\/\+^])/g, "\\$1") + "=([^;]*)"));
+  return m ? decodeURIComponent(m[1]) : null;
+}
+
+export function getFbp(): string | null {
+  if (!hasConsent()) return null;
+  return readCookie("_fbp");
+}
+
+export function getFbc(): string | null {
+  if (!hasConsent()) return null;
+  const c = readCookie("_fbc");
+  if (c) return c;
+  try {
+    if (typeof window === "undefined") return null;
+    const url = new URL(window.location.href);
+    const fbclid = url.searchParams.get("fbclid");
+    if (!fbclid) return null;
+    const ts = Math.floor(Date.now() / 1000);
+    return `fb.1.${ts}.${fbclid}`;
+  } catch {
+    return null;
+  }
+}
