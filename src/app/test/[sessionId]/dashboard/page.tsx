@@ -6,6 +6,7 @@ import { testSessions } from "@/db/schema/sessions";
 import { eq } from "drizzle-orm";
 import { bandFromIQ } from "@/lib/scoring/bands";
 import { getOrderedSelection } from "@/lib/questions/engine";
+import Link from "next/link";
 
 export default async function DashboardPage({ params }: { params: { sessionId: string } }) {
   const sessionId = params.sessionId;
@@ -140,6 +141,14 @@ export default async function DashboardPage({ params }: { params: { sessionId: s
         <h2 className="text-sm font-semibold">Resumo</h2>
         <div className="mt-2 text-sm text-muted-foreground">
           Total de questões: {totalQuestions}. Respondidas: {totalAnswered}. Sessão {session.timeoutAutosubmit ? "finalizada por tempo" : "finalizada"}.
+        </div>
+        <div className="mt-4">
+          <Link
+            href="/test/start"
+            className="inline-flex w-full items-center justify-center rounded-md bg-black px-6 py-3 text-white hover:opacity-90"
+          >
+            Iniciar um novo teste
+          </Link>
         </div>
       </section>
     </main>

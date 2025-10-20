@@ -4,7 +4,6 @@ import { env } from "@/lib/common/env";
 
 if (!env.DATABASE_URL) {
   // Em dev, apenas alerta; em prod, lance erro
-  console.warn("[db] DATABASE_URL ausente. Defina em .env.local para conectar ao Postgres.");
 }
 
 const useSSL = Boolean(

@@ -11,7 +11,7 @@ export default function CheckoutClient() {
   const [loading, setLoading] = useState(false);
   const [missingSession, setMissingSession] = useState(false);
   const sessionFromQuery = sp.get("session") || sp.get("sessionId") || "";
-  const isRetest = sp.get("retest") === "1";
+  const [isRetest, setIsRetest] = useState(sp.get("retest") === "1");
   const allowForcePaid = process.env.NODE_ENV !== "production" && process.env.NEXT_PUBLIC_ALLOW_FORCE_PAID === "1";
 
   useEffect(() => {
@@ -22,6 +22,18 @@ export default function CheckoutClient() {
       return () => clearTimeout(id);
     }
   }, [sessionFromQuery, router]);
+
+  useEffect(() => {
+    if (sp.get("retest") === "1") {
+      if (!isRetest) setIsRetest(true);
+      return;
+    }
+    try {
+      const v = typeof window !== "undefined" ? window.localStorage.getItem("retest") : null;
+      const b = v === "1" || v === "true";
+      if (b !== isRetest) setIsRetest(b);
+    } catch {}
+  }, [sp, isRetest]);
 
   useEffect(() => {
     if (!sessionFromQuery) return;
