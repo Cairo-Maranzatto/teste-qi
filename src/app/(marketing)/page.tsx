@@ -1,6 +1,8 @@
 import RankingTop5 from "@/components/RankingTop5";
 import Link from "next/link";
 
+export const dynamic = "force-dynamic";
+
 export default function Page() {
   return (
     <main className="mx-auto max-w-5xl p-6 md:p-8">
