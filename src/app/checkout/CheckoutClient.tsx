@@ -90,10 +90,10 @@ export default function CheckoutClient() {
           router.replace(`/test/${sessionFromQuery}/result?status=success`);
         }
       } catch {}
-      if (attempts >= 24) {
+      if (attempts >= 60) {
         clearInterval(id);
       }
-    }, 5000);
+    }, 2000);
     return () => {
       clearInterval(id);
     };

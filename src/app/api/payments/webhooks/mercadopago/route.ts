@@ -1,6 +1,6 @@
 export const runtime = "nodejs";
 import { NextResponse } from "next/server";
-import { verifyWebhookSignature, getPayment } from "@/lib/payments/mercadopago";
+import { verifyWebhookSignature, getPayment, getMerchantOrder } from "@/lib/payments/mercadopago";
 import { db } from "@/db";
 import { payments } from "@/db/schema/payments";
 import { testSessions } from "@/db/schema/sessions";
@@ -35,6 +35,72 @@ export async function POST(req: Request) {
     body = raw ? JSON.parse(raw) : {};
   } catch {
     body = {};
+  }
+
+  const topic = ((url.searchParams.get("topic") || body?.type || "") as string).toLowerCase();
+
+  // Suporte ao tópico merchant_order: buscar a order e processar os payments associados
+  if (topic === "merchant_order") {
+    const orderId = url.searchParams.get("id") || (body?.id ? String(body.id) : "");
+    if (!orderId) {
+      return NextResponse.json({ error: "merchant order id not found" }, { status: 400 });
+    }
+    try {
+      const mo = await getMerchantOrder(orderId);
+      const rawRef = mo.external_reference || "";
+      const sessionId = (rawRef.split("|")[0] || "");
+      const paymentsArr: number[] = Array.isArray(mo.payments)
+        ? mo.payments
+            .map((e: any) => (typeof e?.id === "number" ? e.id : typeof e?.payment?.id === "number" ? e.payment.id : null))
+            .filter((v: any) => v !== null)
+        : [];
+      let anyApproved = false;
+      for (const pid of paymentsArr) {
+        const p = await getPayment(String(pid));
+        const amountCents = Math.round((p.transaction_amount ?? 0) * 100);
+        const providerPaymentId = String(p.id);
+        const payerEmail = p.payer?.email ?? null;
+        const ref = p.external_reference ?? rawRef;
+        await db
+          .insert(payments)
+          .values({
+            id: providerPaymentId,
+            sessionId,
+            provider: "mercadopago",
+            providerPaymentId,
+            amountCents,
+            status: p.status ?? "pending",
+            externalReference: ref || null,
+            payerEmail: payerEmail || null,
+          })
+          .onConflictDoUpdate({
+            target: payments.id,
+            set: {
+              status: p.status ?? "pending",
+              amountCents,
+              providerPaymentId,
+              externalReference: ref || null,
+              payerEmail: payerEmail || null,
+            },
+          });
+        if (p.status === "approved" && sessionId) {
+          anyApproved = true;
+          await db.update(testSessions).set({ paid: true as any }).where(eq(testSessions.id, sessionId));
+          try {
+            await sendPurchaseFromWebhook({
+              providerPaymentId,
+              amountCents,
+              sessionId,
+              payerEmail,
+              externalReferenceRaw: ref ?? null,
+            });
+          } catch {}
+        }
+      }
+      return NextResponse.json({ ok: true, processed: paymentsArr.length, anyApproved });
+    } catch (err: any) {
+      return NextResponse.json({ error: err?.message ?? "failed merchant order" }, { status: 500 });
+    }
   }
 
   const paymentId = extractPaymentId(body, url);

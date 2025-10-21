@@ -94,6 +94,23 @@ export async function getPayment(paymentId: string) {
   };
 }
 
+export async function getMerchantOrder(orderId: string) {
+  if (!env.MP_ACCESS_TOKEN) throw new Error("MP_ACCESS_TOKEN ausente");
+  const res = await fetch(`https://api.mercadopago.com/merchant_orders/${orderId}`, {
+    headers: { Authorization: `Bearer ${env.MP_ACCESS_TOKEN}` },
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    const txt = await res.text().catch(() => "");
+    throw new Error(`MP get merchant order failed: ${res.status} ${txt}`);
+  }
+  return (await res.json()) as unknown as {
+    id: number;
+    external_reference?: string;
+    payments?: Array<{ id?: number } | { payment?: { id?: number } }>;
+  };
+}
+
 export async function searchPaymentsByExternalReference(externalReference: string) {
   if (!env.MP_ACCESS_TOKEN) throw new Error("MP_ACCESS_TOKEN ausente");
   const url = new URL("https://api.mercadopago.com/v1/payments/search");
