@@ -1,5 +1,6 @@
-import RankingTop5 from "@/components/RankingTop5";
+"use client";
 import Link from "next/link";
+import RankingTop5 from "@/components/RankingTop5";
 
 export const dynamic = "force-dynamic";
 
