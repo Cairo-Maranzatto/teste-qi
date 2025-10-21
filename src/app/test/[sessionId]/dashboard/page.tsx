@@ -8,8 +8,8 @@ import { bandFromIQ } from "@/lib/scoring/bands";
 import { getOrderedSelection } from "@/lib/questions/engine";
 import Link from "next/link";
 
-export default async function DashboardPage({ params }: { params: { sessionId: string } }) {
-  const sessionId = params.sessionId;
+export default async function DashboardPage({ params }: { params: Promise<{ sessionId: string }> }) {
+  const { sessionId } = await params;
 
   const [session] = await db.select().from(testSessions).where(eq(testSessions.id, sessionId)).limit(1);
   if (!session) {

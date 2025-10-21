@@ -12,13 +12,14 @@ import { answers } from "@/db/schema/answers";
 import { getOrderedSelection } from "@/lib/questions/engine";
 import ViewResultPixel from "@/components/ViewResultPixel";
 
-type Props = { params: { sessionId: string }; searchParams?: { [k: string]: string | string[] | undefined } };
+type Props = { params: Promise<{ sessionId: string }>; searchParams?: Promise<{ [k: string]: string | string[] | undefined }> };
 
 export default async function ResultPage({ params, searchParams }: Props) {
-  const sessionId = params.sessionId;
+  const { sessionId } = await params;
+  const sp = searchParams ? await searchParams : undefined;
   const allowPreview = process.env.NODE_ENV !== "production";
-  const preview = allowPreview && (searchParams?.preview ?? "0") === "1";
-  const rawStatus = searchParams?.status;
+  const preview = allowPreview && ((sp?.preview ?? "0") === "1");
+  const rawStatus = sp?.status;
   const status = Array.isArray(rawStatus) ? rawStatus[0] : rawStatus;
   const [session] = await db.select().from(testSessions).where(eq(testSessions.id, sessionId)).limit(1);
   const isPaid = Boolean(session?.paid);
