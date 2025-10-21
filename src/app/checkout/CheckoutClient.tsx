@@ -75,6 +75,30 @@ export default function CheckoutClient() {
     }
   }, [sp]);
 
+  useEffect(() => {
+    if (!sessionFromQuery) return;
+    const st = sp.get("status");
+    if (st !== "pending") return;
+    let attempts = 0;
+    const id = setInterval(async () => {
+      attempts++;
+      try {
+        const res = await fetch(`/api/payments/status?sessionId=${encodeURIComponent(sessionFromQuery)}`);
+        const j = await res.json();
+        if (res.ok && (j?.paid || j?.lastPayment?.status === "approved")) {
+          toast.success("Pagamento confirmado");
+          router.replace(`/test/${sessionFromQuery}/result?status=success`);
+        }
+      } catch {}
+      if (attempts >= 24) {
+        clearInterval(id);
+      }
+    }, 5000);
+    return () => {
+      clearInterval(id);
+    };
+  }, [sessionFromQuery, sp, router]);
+
   const handlePay = useCallback(async () => {
     setLoading(true);
     try {
@@ -109,7 +133,7 @@ export default function CheckoutClient() {
       const res = await fetch(`/api/payments/status?sessionId=${encodeURIComponent(sessionId)}`);
       const j = await res.json();
       if (!res.ok) throw new Error(j?.error || "Falha ao consultar status");
-      if (j?.paid) {
+      if (j?.paid || j?.lastPayment?.status === "approved") {
         toast.success("Pagamento confirmado");
         router.replace(`/test/${sessionId}/result?status=success`);
       } else if (j?.lastPayment?.status === "pending") {

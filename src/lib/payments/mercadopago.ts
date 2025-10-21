@@ -94,6 +94,32 @@ export async function getPayment(paymentId: string) {
   };
 }
 
+export async function searchPaymentsByExternalReference(externalReference: string) {
+  if (!env.MP_ACCESS_TOKEN) throw new Error("MP_ACCESS_TOKEN ausente");
+  const url = new URL("https://api.mercadopago.com/v1/payments/search");
+  url.searchParams.set("external_reference", externalReference);
+  url.searchParams.set("sort", "date_created");
+  url.searchParams.set("criteria", "desc");
+  url.searchParams.set("limit", "10");
+  const res = await fetch(url, {
+    headers: { Authorization: `Bearer ${env.MP_ACCESS_TOKEN}` },
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    const txt = await res.text().catch(() => "");
+    throw new Error(`MP search payments failed: ${res.status} ${txt}`);
+  }
+  return (await res.json()) as {
+    results: Array<{
+      id: number;
+      status: "approved" | "pending" | "rejected" | string;
+      transaction_amount: number;
+      payer?: { email?: string };
+      external_reference?: string;
+    }>;
+  };
+}
+
 export function verifyWebhookSignature(_headers: Headers, _rawBody: string): boolean {
   // Nota: Implementar assinatura quando configurada. Por ora, aceitar sempre em dev.
   return true;

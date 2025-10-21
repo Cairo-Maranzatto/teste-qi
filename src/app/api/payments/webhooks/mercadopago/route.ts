@@ -45,7 +45,8 @@ export async function POST(req: Request) {
   try {
     const p = await getPayment(paymentId);
 
-    const sessionId = p.external_reference ?? "";
+    const rawRef = p.external_reference ?? "";
+    const sessionId = (rawRef.split("|")[0] || "");
     const amountCents = Math.round((p.transaction_amount ?? 0) * 100);
     const providerPaymentId = String(p.id);
     const payerEmail = p.payer?.email ?? null;
@@ -60,7 +61,7 @@ export async function POST(req: Request) {
         providerPaymentId,
         amountCents,
         status: p.status ?? "pending",
-        externalReference: sessionId || null,
+        externalReference: rawRef || null,
         payerEmail: payerEmail || null,
       })
       .onConflictDoUpdate({
@@ -69,7 +70,7 @@ export async function POST(req: Request) {
           status: p.status ?? "pending",
           amountCents,
           providerPaymentId,
-          externalReference: sessionId || null,
+          externalReference: rawRef || null,
           payerEmail: payerEmail || null,
         },
       });
