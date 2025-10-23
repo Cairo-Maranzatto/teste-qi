@@ -810,36 +810,6 @@
     "correctId": "A"
   },
   {
-    "id": "q055",
-    "domain": "padroes",
-    "difficulty": "medio",
-    "type": "image",
-    "timeTargetSec": 12,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "Seta para sudoeste" },
-      { "id": "B", "label": "Seta para noroeste" },
-      { "id": "C", "label": "Seta para a esquerda" },
-      { "id": "D", "label": "Seta para nordeste" }
-    ],
-    "correctId": "A"
-  },
-  {
-    "id": "q056",
-    "domain": "padroes",
-    "difficulty": "medio",
-    "type": "image",
-    "timeTargetSec": 12,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "1º quadrante" },
-      { "id": "B", "label": "2º quadrante" },
-      { "id": "C", "label": "3º quadrante" },
-      { "id": "D", "label": "4º quadrante" }
-    ],
-    "correctId": "A"
-  },
-  {
     "id": "q057",
     "domain": "padroes",
     "difficulty": "medio",
@@ -851,21 +821,6 @@
       { "id": "B", "label": "Triângulo para a direita" },
       { "id": "C", "label": "Triângulo para baixo" },
       { "id": "D", "label": "Triângulo para a esquerda" }
-    ],
-    "correctId": "A"
-  },
-  {
-    "id": "q058",
-    "domain": "padroes",
-    "difficulty": "medio",
-    "type": "image",
-    "timeTargetSec": 12,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "8 pontas" },
-      { "id": "B", "label": "9 pontas" },
-      { "id": "C", "label": "10 pontas" },
-      { "id": "D", "label": "7 pontas" }
     ],
     "correctId": "A"
   },
@@ -883,125 +838,5 @@
       { "id": "D", "label": "Losango" }
     ],
     "correctId": "C"
-  },
-  {
-    "id": "q060",
-    "domain": "padroes",
-    "difficulty": "medio",
-    "type": "image",
-    "timeTargetSec": 12,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "5 anéis" },
-      { "id": "B", "label": "6 anéis" },
-      { "id": "C", "label": "4 anéis" },
-      { "id": "D", "label": "3 anéis" }
-    ],
-    "correctId": "A"
-  },
-  {
-    "id": "q061",
-    "domain": "padroes",
-    "difficulty": "medio",
-    "type": "image",
-    "timeTargetSec": 12,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "Centro" },
-      { "id": "B", "label": "Topo" },
-      { "id": "C", "label": "Diagonal" },
-      { "id": "D", "label": "Fora do quadrado" }
-    ],
-    "correctId": "B"
-  },
-  {
-    "id": "q062",
-    "domain": "padroes",
-    "difficulty": "dificil",
-    "type": "image",
-    "timeTargetSec": 16,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "10 lados" },
-      { "id": "B", "label": "11 lados" },
-      { "id": "C", "label": "12 lados" },
-      { "id": "D", "label": "13 lados" }
-    ],
-    "correctId": "B"
-  },
-  {
-    "id": "q063",
-    "domain": "padroes",
-    "difficulty": "dificil",
-    "type": "image",
-    "timeTargetSec": 16,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "Sudoeste" },
-      { "id": "B", "label": "Noroeste" },
-      { "id": "C", "label": "Leste" },
-      { "id": "D", "label": "Norte" }
-    ],
-    "correctId": "A"
-  },
-  {
-    "id": "q064",
-    "domain": "padroes",
-    "difficulty": "medio",
-    "type": "image",
-    "timeTargetSec": 12,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "|||" },
-      { "id": "B", "label": "|" },
-      { "id": "C", "label": "||" },
-      { "id": "D", "label": "||||" }
-    ],
-    "correctId": "A"
-  },
-  {
-    "id": "q065",
-    "domain": "padroes",
-    "difficulty": "medio",
-    "type": "image",
-    "timeTargetSec": 12,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "Círculo branco" },
-      { "id": "B", "label": "Quadrado preto" },
-      { "id": "C", "label": "Triângulo preto" },
-      { "id": "D", "label": "Quadrado branco" }
-    ],
-    "correctId": "A"
-  },
-  {
-    "id": "q066",
-    "domain": "padroes",
-    "difficulty": "dificil",
-    "type": "image",
-    "timeTargetSec": 16,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "Triângulo para a esquerda" },
-      { "id": "B", "label": "Triângulo para cima" },
-      { "id": "C", "label": "Triângulo para a direita" },
-      { "id": "D", "label": "Triângulo para baixo" }
-    ],
-    "correctId": "A"
-  },
-  {
-    "id": "q067",
-    "domain": "padroes",
-    "difficulty": "dificil",
-    "type": "image",
-    "timeTargetSec": 16,
-    "stem": "Qual opção completa corretamente o padrão?",
-    "options": [
-      { "id": "A", "label": "Seta vermelha para cima" },
-      { "id": "B", "label": "Seta azul para cima" },
-      { "id": "C", "label": "Seta vermelha para a esquerda" },
-      { "id": "D", "label": "Seta azul para baixo" }
-    ],
-    "correctId": "A"
   }
 ]
