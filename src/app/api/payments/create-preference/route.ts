@@ -14,10 +14,10 @@ export async function POST(req: Request) {
     }
     const amountCents: number =
       typeof body?.amountCents === "number"
-        ? body.amountCents
+        ? Math.round(body.amountCents)
         : body?.retest
-        ? 200
-        : 500;
+        ? 199
+        : 499;
 
     const backUrlSuccess = `${env.SITE_URL}/test/${sessionId}/result?status=success`;
     const backUrlFailure = `${env.SITE_URL}/checkout?status=failure&session=${sessionId}`;

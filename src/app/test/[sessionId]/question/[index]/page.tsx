@@ -225,6 +225,17 @@ export default function QuestionPage({ params }: Params) {
           <div id="question-stem" className="mt-2 text-sm">
             {qLoading ? "Carregando…" : q?.stem || "—"}
           </div>
+          {/* Imagem da questão (quando type === "image") */}
+          {q && q.meta.type === "image" && (
+            <div className="mt-3">
+              <img
+                src={`/images/${q.id}.png`}
+                alt={`Questão ${q.id}`}
+                className="mx-auto max-h-[360px] w-auto rounded-md border object-contain"
+                loading="eager"
+              />
+            </div>
+          )}
           <div className="mt-3 grid grid-cols-1 gap-2 md:grid-cols-2" role="group" aria-label="Alternativas">
             {(q?.options ?? []).map((opt) => (
               <button

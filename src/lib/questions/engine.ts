@@ -1,4 +1,4 @@
-import bank from "./banco_questoes_qi_v1.json";
+import bank from "./banco_questoes_qi_v2.json";
 import { seededShuffle } from "@/lib/random";
 
 export type BankOption = { id: string; label: string };

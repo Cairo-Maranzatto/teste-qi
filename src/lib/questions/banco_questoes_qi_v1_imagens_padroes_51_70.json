@@ -1,0 +1,257 @@
+[
+  {
+    "id": "q051",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image - Sequência de setas: cima → direita → baixo → esquerda → [ ? ] (rotação 90° horário)",
+    "timeTargetSec": 10,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Seta para cima" },
+      { "id": "B", "label": "Seta para a direita" },
+      { "id": "C", "label": "Seta para baixo" },
+      { "id": "D", "label": "Seta para a esquerda" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q052",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image - Polígonos com lados crescentes: triângulo (3), quadrado (4), pentágono (5), hexágono (6), [ ? ]",
+    "timeTargetSec": 10,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Heptágono" },
+      { "id": "B", "label": "Octógono" },
+      { "id": "C", "label": "Eneágono" },
+      { "id": "D", "label": "Decágono" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q053",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image - Setas alternando direções opostas: direita, esquerda, direita, esquerda, [ ? ]",
+    "timeTargetSec": 10,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Seta para cima" },
+      { "id": "B", "label": "Seta para a direita" },
+      { "id": "C", "label": "Seta para baixo" },
+      { "id": "D", "label": "Seta para a esquerda" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q054",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image - Círculos alternando cores: vermelho, azul, verde, vermelho, azul, [ ? ]",
+    "timeTargetSec": 10,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Verde" },
+      { "id": "B", "label": "Amarelo" },
+      { "id": "C", "label": "Roxo" },
+      { "id": "D", "label": "Laranja" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q055",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image - Setas rotacionando 45°: ↑, ↗, →, ↘, ↓, [ ? ]",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Seta para sudoeste" },
+      { "id": "B", "label": "Seta para noroeste" },
+      { "id": "C", "label": "Seta para a esquerda" },
+      { "id": "D", "label": "Seta para nordeste" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q056",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image - Quadrantes sombreados no sentido horário: 1º, 2º, 3º, 4º, [ ? ]",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "1º quadrante" },
+      { "id": "B", "label": "2º quadrante" },
+      { "id": "C", "label": "3º quadrante" },
+      { "id": "D", "label": "4º quadrante" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q057",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image - Triângulos alternando orientação: para cima, para baixo, para cima, para baixo, [ ? ]",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Triângulo para cima" },
+      { "id": "B", "label": "Triângulo para a direita" },
+      { "id": "C", "label": "Triângulo para baixo" },
+      { "id": "D", "label": "Triângulo para a esquerda" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q058",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image - Estrelas com pontas crescentes: 4, 5, 6, 7, [ ? ]",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "8 pontas" },
+      { "id": "B", "label": "9 pontas" },
+      { "id": "C", "label": "10 pontas" },
+      { "id": "D", "label": "7 pontas" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q059",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image - Sequência de formas repetindo: círculo, quadrado, círculo, quadrado, [ ? ]",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Triângulo" },
+      { "id": "B", "label": "Quadrado" },
+      { "id": "C", "label": "Círculo" },
+      { "id": "D", "label": "Losango" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q060",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image - Anéis concêntricos: 1, 2, 3, 4, [ ? ]",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "5 anéis" },
+      { "id": "B", "label": "6 anéis" },
+      { "id": "C", "label": "4 anéis" },
+      { "id": "D", "label": "3 anéis" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q061",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image - Ponto movendo-se nas bordas: topo, direita, base, esquerda, [ ? ]",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Centro" },
+      { "id": "B", "label": "Topo" },
+      { "id": "C", "label": "Diagonal" },
+      { "id": "D", "label": "Fora do quadrado" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q062",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image - Polígonos com lados +2: 3, 5, 7, 9, [ ? ]",
+    "timeTargetSec": 16,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "10 lados" },
+      { "id": "B", "label": "11 lados" },
+      { "id": "C", "label": "12 lados" },
+      { "id": "D", "label": "13 lados" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q063",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image - Rosa dos ventos (rotação 60°): Norte, Nordeste, Leste, Sudeste, Sul, [ ? ]",
+    "timeTargetSec": 16,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Sudoeste" },
+      { "id": "B", "label": "Noroeste" },
+      { "id": "C", "label": "Leste" },
+      { "id": "D", "label": "Norte" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q064",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image - Barras verticais repetindo 1, 2, 3: |, ||, |||, |, ||, [ ? ]",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "|||" },
+      { "id": "B", "label": "|" },
+      { "id": "C", "label": "||" },
+      { "id": "D", "label": "||||" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q065",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image - Padrão forma+cor: círculo preto, círculo branco, quadrado preto, quadrado branco, círculo preto, [ ? ]",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Círculo branco" },
+      { "id": "B", "label": "Quadrado preto" },
+      { "id": "C", "label": "Triângulo preto" },
+      { "id": "D", "label": "Quadrado branco" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q066",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image - Triângulo rotacionando 120°: cima, direita, baixo, [ ? ]",
+    "timeTargetSec": 16,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Triângulo para a esquerda" },
+      { "id": "B", "label": "Triângulo para cima" },
+      { "id": "C", "label": "Triângulo para a direita" },
+      { "id": "D", "label": "Triângulo para baixo" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q067",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image - Setas alternando rotação e cor: vermelha ↑, azul →, vermelha ↓, azul ←, [ ? ]",
+    "timeTargetSec": 16,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Seta vermelha para cima" },
+      { "id": "B", "label": "Seta azul para cima" },
+      { "id": "C", "label": "Seta vermelha para a esquerda" },
+      { "id": "D", "label": "Seta azul para baixo" }
+    ],
+    "correctId": "A"
+  }
+]

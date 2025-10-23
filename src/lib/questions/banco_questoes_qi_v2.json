@@ -1,0 +1,1007 @@
+[
+  {
+    "id": "q001",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image",
+    "timeTargetSec": 10,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "34" },
+      { "id": "B", "label": "36" },
+      { "id": "C", "label": "40" },
+      { "id": "D", "label": "48" }
+    ],
+    "correctId": "D"
+  },
+  {
+    "id": "q002",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image",
+    "timeTargetSec": 10,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "20" },
+      { "id": "B", "label": "24" },
+      { "id": "C", "label": "25" },
+      { "id": "D", "label": "27" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q003",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image",
+    "timeTargetSec": 10,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "2" },
+      { "id": "B", "label": "1" },
+      { "id": "C", "label": "0" },
+      { "id": "D", "label": "-1" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q004",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image",
+    "timeTargetSec": 10,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "10" },
+      { "id": "B", "label": "12" },
+      { "id": "C", "label": "13" },
+      { "id": "D", "label": "14" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q005",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "70" },
+      { "id": "B", "label": "75" },
+      { "id": "C", "label": "80" },
+      { "id": "D", "label": "90" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q006",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "93" },
+      { "id": "B", "label": "95" },
+      { "id": "C", "label": "97" },
+      { "id": "D", "label": "99" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q007",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "1" },
+      { "id": "B", "label": "2" },
+      { "id": "C", "label": "0" },
+      { "id": "D", "label": "-1" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q008",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "14" },
+      { "id": "B", "label": "15" },
+      { "id": "C", "label": "16" },
+      { "id": "D", "label": "17" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q009",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "25" },
+      { "id": "B", "label": "27" },
+      { "id": "C", "label": "29" },
+      { "id": "D", "label": "31" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q010",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "31" },
+      { "id": "B", "label": "33" },
+      { "id": "C", "label": "35" },
+      { "id": "D", "label": "37" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q011",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "11" },
+      { "id": "B", "label": "12" },
+      { "id": "C", "label": "13" },
+      { "id": "D", "label": "14" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q012",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "22" },
+      { "id": "B", "label": "23" },
+      { "id": "C", "label": "24" },
+      { "id": "D", "label": "25" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q013",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "9" },
+      { "id": "B", "label": "11" },
+      { "id": "C", "label": "12" },
+      { "id": "D", "label": "13" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q014",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,    
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "30" },
+      { "id": "B", "label": "32" },
+      { "id": "C", "label": "34" },
+      { "id": "D", "label": "36" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q015",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "12" },
+      { "id": "B", "label": "13" },
+      { "id": "C", "label": "14" },
+      { "id": "D", "label": "15" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q016",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "162" },
+      { "id": "B", "label": "180" },
+      { "id": "C", "label": "243" },
+      { "id": "D", "label": "324" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q017",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image",
+    "timeTargetSec": 16,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "240" },
+      { "id": "B", "label": "360" },
+      { "id": "C", "label": "600" },
+      { "id": "D", "label": "720" }
+    ],
+    "correctId": "D"
+  },
+  {
+    "id": "q018",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image",
+    "timeTargetSec": 16,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "27" },
+      { "id": "B", "label": "30" },
+      { "id": "C", "label": "31" },
+      { "id": "D", "label": "33" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q019",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image",
+    "timeTargetSec": 16,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "245" },
+      { "id": "B", "label": "365" },
+      { "id": "C", "label": "366" },
+      { "id": "D", "label": "367" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q020",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image",
+    "timeTargetSec": 16,
+    "stem": "Qual número completa corretamente a sequência?",
+    "options": [
+      { "id": "A", "label": "20" },
+      { "id": "B", "label": "21" },
+      { "id": "C", "label": "23" },
+      { "id": "D", "label": "24" }
+    ],
+    "correctId": "D"
+  },
+  {
+    "id": "q021",
+    "domain": "logica",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Em uma escola, todo aluno do Clube de Xadrez (A) também faz parte do Grêmio (B). Sabe-se que alguns alunos do Grêmio (B) também participam do Curso de Música (C). É possível concluir que algum aluno do Clube de Xadrez (A) também está no Curso de Música (C)?",
+    "options": [
+      { "id": "A", "label": "Verdadeiro" },
+      { "id": "B", "label": "Falso" },
+      { "id": "C", "label": "Não necessariamente" },
+      { "id": "D", "label": "Impossível determinar" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q022",
+    "domain": "logica",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Se hoje é quarta-feira, que dia será 2 dias após o dia anterior a amanhã?",
+    "options": [
+      { "id": "A", "label": "Quinta-feira" },
+      { "id": "B", "label": "Sexta-feira" },
+      { "id": "C", "label": "Sábado" },
+      { "id": "D", "label": "Domingo" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q023",
+    "domain": "logica",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Em uma escola, Ana sempre diz a verdade. Bruno às vezes mente. Bruno afirma: 'Ana está mentindo'. O que é verdadeiro?",
+    "options": [
+      { "id": "A", "label": "Ana está mentindo" },
+      { "id": "B", "label": "Bruno está dizendo a verdade" },
+      { "id": "C", "label": "Bruno está mentindo" },
+      { "id": "D", "label": "Não é possível saber" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q024",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Se chove, então levo guarda-chuva. Não levei guarda-chuva. Conclusão válida?",
+    "options": [
+      { "id": "A", "label": "Choveu" },
+      { "id": "B", "label": "Não choveu" },
+      { "id": "C", "label": "Levei capa de chuva" },
+      { "id": "D", "label": "Não há conclusão válida" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q025",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Três interruptores controlam três lâmpadas em outra sala. Você pode entrar na sala das lâmpadas apenas uma vez. Como descobrir qual interruptor controla qual lâmpada?",
+    "options": [
+      { "id": "A", "label": "Ligar um de cada vez e entrar três vezes" },
+      { "id": "B", "label": "Ligar dois e entrar uma vez" },
+      { "id": "C", "label": "Ligar um por minutos, desligar, ligar outro; entrar e verificar luz e calor" },
+      { "id": "D", "label": "Não é possível" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q026",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Um trem sai às 09:00 a 60 km/h. Outro sai às 09:30 do mesmo local a 80 km/h na mesma direção. Às quantas horas o segundo alcança o primeiro?",
+    "options": [
+      { "id": "A", "label": "10:30" },
+      { "id": "B", "label": "11:00" },
+      { "id": "C", "label": "11:30" },
+      { "id": "D", "label": "12:00" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q027",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Ao lançar simultaneamente duas moedas justas, qual é a probabilidade de obter exatamente uma cara?",
+    "options": [
+      { "id": "A", "label": "25%" },
+      { "id": "B", "label": "33%" },
+      { "id": "C", "label": "50%" },
+      { "id": "D", "label": "75%" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q028",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual não pertence ao grupo? quadrado, triângulo, círculo, cubo",
+    "options": [
+      { "id": "A", "label": "quadrado" },
+      { "id": "B", "label": "triângulo" },
+      { "id": "C", "label": "círculo" },
+      { "id": "D", "label": "cubo" }
+    ],
+    "correctId": "D"
+  },
+  {
+    "id": "q029",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Todos os gatos são mamíferos. Nenhum mamífero é réptil. Conclusão: Nenhum gato é réptil.",
+    "options": [
+      { "id": "A", "label": "Verdadeiro" },
+      { "id": "B", "label": "Falso" },
+      { "id": "C", "label": "Não necessariamente" },
+      { "id": "D", "label": "Indeterminado" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q030",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "João tem o dobro da idade de Ana. Daqui a 10 anos, a soma das idades será 80. Quais são as idades atuais?",
+    "options": [
+      { "id": "A", "label": "Ana 20, João 40" },
+      { "id": "B", "label": "Ana 18, João 36" },
+      { "id": "C", "label": "Ana 22, João 44" },
+      { "id": "D", "label": "Ana 25, João 50" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q031",
+    "domain": "logica",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Complete a sequência de letras: A, C, F, J, O, ?",
+    "options": [
+      { "id": "A", "label": "S" },
+      { "id": "B", "label": "T" },
+      { "id": "C", "label": "U" },
+      { "id": "D", "label": "V" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q032",
+    "domain": "logica",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Na ilha, cavaleiros sempre dizem a verdade e vassalos sempre mentem. João diz: 'Bruno é vassalo'. Bruno diz: 'Somos de tipos diferentes'. Quem é quem?",
+    "options": [
+      { "id": "A", "label": "João cavaleiro, Bruno vassalo" },
+      { "id": "B", "label": "João vassalo, Bruno cavaleiro" },
+      { "id": "C", "label": "Ambos cavaleiros" },
+      { "id": "D", "label": "Ambos vassalos" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q033",
+    "domain": "logica",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Há três caixas rotuladas 'maçãs', 'laranjas' e 'mistas', mas todas estão rotuladas incorretamente. Você pode retirar uma fruta de apenas uma caixa. De qual caixa deve retirar para corrigir todos os rótulos?",
+    "options": [
+      { "id": "A", "label": "'maçãs'" },
+      { "id": "B", "label": "'laranjas'" },
+      { "id": "C", "label": "'mistas'" },
+      { "id": "D", "label": "Qualquer uma" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q034",
+    "domain": "logica",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Em uma escola, 40% dos alunos participam do Clube do João (A), 50% do Clube do Bruno (B) e 10% não participam de nenhum clube. Qual é o menor percentual que pode participar de ambos os clubes (A e B)?",
+    "options": [
+      { "id": "A", "label": "0%" },
+      { "id": "B", "label": "5%" },
+      { "id": "C", "label": "10%" },
+      { "id": "D", "label": "20%" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q035",
+    "domain": "logica",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Na escola: se João estuda, então aprende. Se aprende, então passa na prova. Conclusão logicamente válida:",
+    "options": [
+      { "id": "A", "label": "Se passa na prova, então estudou" },
+      { "id": "B", "label": "Se estuda, então passa na prova" },
+      { "id": "C", "label": "Se não estuda, então não passa na prova" },
+      { "id": "D", "label": "Passa na prova" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q036",
+    "domain": "verbal",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Analogia: Cão está para latir assim como gato está para...",
+    "options": [
+      { "id": "A", "label": "miar" },
+      { "id": "B", "label": "piar" },
+      { "id": "C", "label": "mugir" },
+      { "id": "D", "label": "grasnar" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q037",
+    "domain": "verbal",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Sinônimo de 'rápido':",
+    "options": [
+      { "id": "A", "label": "lerdo" },
+      { "id": "B", "label": "veloz" },
+      { "id": "C", "label": "vagaroso" },
+      { "id": "D", "label": "tardio" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q038",
+    "domain": "verbal",
+    "difficulty": "facil",
+    "type": "text",
+    "timeTargetSec": 10,
+    "stem": "Antônimo de 'escasso':",
+    "options": [
+      { "id": "A", "label": "raro" },
+      { "id": "B", "label": "parco" },
+      { "id": "C", "label": "abundante" },
+      { "id": "D", "label": "insuficiente" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q039",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Analogia: Faca está para cortar assim como caneta está para...",
+    "options": [
+      { "id": "A", "label": "apontar" },
+      { "id": "B", "label": "escrever" },
+      { "id": "C", "label": "tampar" },
+      { "id": "D", "label": "rabiscar" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q040",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Qual palavra não pertence: cadeira, mesa, sofá, colher",
+    "options": [
+      { "id": "A", "label": "cadeira" },
+      { "id": "B", "label": "mesa" },
+      { "id": "C", "label": "sofá" },
+      { "id": "D", "label": "colher" }
+    ],
+    "correctId": "D"
+  },
+  {
+    "id": "q041",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Analogia: Pintor está para quadro assim como escritor está para...",
+    "options": [
+      { "id": "A", "label": "letra" },
+      { "id": "B", "label": "livro" },
+      { "id": "C", "label": "tinta" },
+      { "id": "D", "label": "teatro" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q042",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Qual prefixo indica negação?",
+    "options": [
+      { "id": "A", "label": "re-" },
+      { "id": "B", "label": "pre-" },
+      { "id": "C", "label": "in-" },
+      { "id": "D", "label": "sub-" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q043",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Qual termo é mais geral (hiperônimo) dos demais?",
+    "options": [
+      { "id": "A", "label": "ave" },
+      { "id": "B", "label": "pardal" },
+      { "id": "C", "label": "animal" },
+      { "id": "D", "label": "pinguim" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q044",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Analogia: Frio está para gelado assim como quente está para...",
+    "options": [
+      { "id": "A", "label": "fervente" },
+      { "id": "B", "label": "morno" },
+      { "id": "C", "label": "árido" },
+      { "id": "D", "label": "úmido" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q045",
+    "domain": "verbal",
+    "difficulty": "medio",
+    "type": "text",
+    "timeTargetSec": 12,
+    "stem": "Qual o plural correto de 'cidadão'?",
+    "options": [
+      { "id": "A", "label": "cidadãos" },
+      { "id": "B", "label": "cidadões" },
+      { "id": "C", "label": "cidadães" },
+      { "id": "D", "label": "cidadãoses" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q046",
+    "domain": "verbal",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Analogia: Meticuloso está para descuidado assim como parcimonioso está para...",
+    "options": [
+      { "id": "A", "label": "econômico" },
+      { "id": "B", "label": "prudente" },
+      { "id": "C", "label": "perdulário" },
+      { "id": "D", "label": "sóbrio" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q047",
+    "domain": "verbal",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Escolha a melhor paráfrase para o provérbio: 'Quem com ferro fere, com ferro será ferido'.",
+    "options": [
+      { "id": "A", "label": "Quem erra, esquece" },
+      { "id": "B", "label": "O que vai, volta" },
+      { "id": "C", "label": "Quem muito espera, pouco alcança" },
+      { "id": "D", "label": "Depois da tempestade vem a bonança" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q048",
+    "domain": "verbal",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Escolha a melhor paráfrase para o provérbio: 'De grão em grão, a galinha enche o papo'.",
+    "options": [
+      { "id": "A", "label": "Grandes resultados nascem da soma de pequenas conquistas diárias" },
+      { "id": "B", "label": "Sem arriscar, não se conquista nada relevante" },
+      { "id": "C", "label": "É melhor garantir o que já se tem do que arriscar" },
+      { "id": "D", "label": "Cada um deve cuidar apenas do que é seu" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q049",
+    "domain": "verbal",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Escolha a melhor paráfrase para o provérbio: 'Água mole em pedra dura, tanto bate até que fura'.",
+    "options": [
+      { "id": "A", "label": "A persistência, com o tempo, vence até obstáculos muito resistentes" },
+      { "id": "B", "label": "Quem acorda cedo tem mais chances de sucesso" },
+      { "id": "C", "label": "Depois das dificuldades, a bonança chega por si só" },
+      { "id": "D", "label": "Quem causa o mal acaba recebendo o mal de volta" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q050",
+    "domain": "verbal",
+    "difficulty": "dificil",
+    "type": "text",
+    "timeTargetSec": 16,
+    "stem": "Escolha a melhor paráfrase para o provérbio: 'A pressa é inimiga da perfeição'.",
+    "options": [
+      { "id": "A", "label": "Fazer tudo rápido garante melhores resultados" },
+      { "id": "B", "label": "Agir com pressa pode comprometer a qualidade" },
+      { "id": "C", "label": "A perfeição depende apenas de prática" },
+      { "id": "D", "label": "Quem espera sempre alcança" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q051",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image",
+    "timeTargetSec": 10,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Seta para cima" },
+      { "id": "B", "label": "Seta para a direita" },
+      { "id": "C", "label": "Seta para baixo" },
+      { "id": "D", "label": "Seta para a esquerda" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q052",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image",
+    "timeTargetSec": 10,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Heptágono" },
+      { "id": "B", "label": "Octógono" },
+      { "id": "C", "label": "Eneágono" },
+      { "id": "D", "label": "Decágono" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q053",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image",
+    "timeTargetSec": 10,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Seta para cima" },
+      { "id": "B", "label": "Seta para a direita" },
+      { "id": "C", "label": "Seta para baixo" },
+      { "id": "D", "label": "Seta para a esquerda" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q054",
+    "domain": "padroes",
+    "difficulty": "facil",
+    "type": "image",
+    "timeTargetSec": 10,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Verde" },
+      { "id": "B", "label": "Amarelo" },
+      { "id": "C", "label": "Roxo" },
+      { "id": "D", "label": "Laranja" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q055",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Seta para sudoeste" },
+      { "id": "B", "label": "Seta para noroeste" },
+      { "id": "C", "label": "Seta para a esquerda" },
+      { "id": "D", "label": "Seta para nordeste" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q056",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "1º quadrante" },
+      { "id": "B", "label": "2º quadrante" },
+      { "id": "C", "label": "3º quadrante" },
+      { "id": "D", "label": "4º quadrante" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q057",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Triângulo para cima" },
+      { "id": "B", "label": "Triângulo para a direita" },
+      { "id": "C", "label": "Triângulo para baixo" },
+      { "id": "D", "label": "Triângulo para a esquerda" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q058",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "8 pontas" },
+      { "id": "B", "label": "9 pontas" },
+      { "id": "C", "label": "10 pontas" },
+      { "id": "D", "label": "7 pontas" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q059",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Triângulo" },
+      { "id": "B", "label": "Quadrado" },
+      { "id": "C", "label": "Círculo" },
+      { "id": "D", "label": "Losango" }
+    ],
+    "correctId": "C"
+  },
+  {
+    "id": "q060",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "5 anéis" },
+      { "id": "B", "label": "6 anéis" },
+      { "id": "C", "label": "4 anéis" },
+      { "id": "D", "label": "3 anéis" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q061",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Centro" },
+      { "id": "B", "label": "Topo" },
+      { "id": "C", "label": "Diagonal" },
+      { "id": "D", "label": "Fora do quadrado" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q062",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image",
+    "timeTargetSec": 16,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "10 lados" },
+      { "id": "B", "label": "11 lados" },
+      { "id": "C", "label": "12 lados" },
+      { "id": "D", "label": "13 lados" }
+    ],
+    "correctId": "B"
+  },
+  {
+    "id": "q063",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image",
+    "timeTargetSec": 16,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Sudoeste" },
+      { "id": "B", "label": "Noroeste" },
+      { "id": "C", "label": "Leste" },
+      { "id": "D", "label": "Norte" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q064",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "|||" },
+      { "id": "B", "label": "|" },
+      { "id": "C", "label": "||" },
+      { "id": "D", "label": "||||" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q065",
+    "domain": "padroes",
+    "difficulty": "medio",
+    "type": "image",
+    "timeTargetSec": 12,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Círculo branco" },
+      { "id": "B", "label": "Quadrado preto" },
+      { "id": "C", "label": "Triângulo preto" },
+      { "id": "D", "label": "Quadrado branco" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q066",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image",
+    "timeTargetSec": 16,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Triângulo para a esquerda" },
+      { "id": "B", "label": "Triângulo para cima" },
+      { "id": "C", "label": "Triângulo para a direita" },
+      { "id": "D", "label": "Triângulo para baixo" }
+    ],
+    "correctId": "A"
+  },
+  {
+    "id": "q067",
+    "domain": "padroes",
+    "difficulty": "dificil",
+    "type": "image",
+    "timeTargetSec": 16,
+    "stem": "Qual opção completa corretamente o padrão?",
+    "options": [
+      { "id": "A", "label": "Seta vermelha para cima" },
+      { "id": "B", "label": "Seta azul para cima" },
+      { "id": "C", "label": "Seta vermelha para a esquerda" },
+      { "id": "D", "label": "Seta azul para baixo" }
+    ],
+    "correctId": "A"
+  }
+]
